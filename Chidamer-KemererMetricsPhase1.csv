@@ -1,0 +1,21 @@
+Chidamber-Kemerer metrics,Wed, 25 Oct 2017 14:33:35 SAST
+Class,CBO,DIT,LCOM,NOC,RFC,WMC
+"za.co.wernerm.squekyclean.SquekycleanApplication",0,1,1,0,2,1
+"za.co.wernerm.squekyclean.api.PostController",6,1,1,0,17,1
+"za.co.wernerm.squekyclean.api.SubscribeController",4,1,1,0,7,1
+"za.co.wernerm.squekyclean.api.ThreadController",7,1,1,0,26,6
+"za.co.wernerm.squekyclean.dto.CreatePostDTO",3,1,3,0,8,8
+"za.co.wernerm.squekyclean.dto.CreateThreadDTO",1,1,1,0,4,4
+"za.co.wernerm.squekyclean.dto.PostDTO",2,1,4,0,10,10
+"za.co.wernerm.squekyclean.dto.SubscribeDTO",1,1,2,0,6,6
+"za.co.wernerm.squekyclean.dto.ThreadDTO",2,1,3,0,8,8
+"za.co.wernerm.squekyclean.integration.ThreadRepoTest",2,1,2,0,3,2
+"za.co.wernerm.squekyclean.model.Post",4,1,5,0,13,13
+"za.co.wernerm.squekyclean.model.Thread",5,1,4,0,10,10
+"za.co.wernerm.squekyclean.repository.PostRepository",n/a,n/a,n/a,n/a,0,n/a
+"za.co.wernerm.squekyclean.repository.ThreadRepository",n/a,n/a,n/a,n/a,0,n/a
+"za.co.wernerm.squekyclean.subscriptions.SNSSubscription",5,1,1,0,21,4
+"za.co.wernerm.squekyclean.subscriptions.ThreadSubscription",n/a,n/a,n/a,n/a,3,n/a
+"za.co.wernerm.squekyclean.util.DebugProperties",1,1,1,0,13,4
+"za.co.wernerm.squekyclean.util.IntegrationTestCategory",n/a,n/a,n/a,n/a,0,n/a
+

@@ -1,0 +1,16 @@
+CREATE TABLE Users
+( id serial
+, email varchar(60)
+);
+
+ALTER TABLE Users
+ ADD CONSTRAINT USERS_PKEY PRIMARY KEY
+  ( id
+  )
+;
+
+ALTER TABLE Users
+ ADD CONSTRAINT USERS_UKEY_EMAIL UNIQUE
+  ( email
+  )
+;
