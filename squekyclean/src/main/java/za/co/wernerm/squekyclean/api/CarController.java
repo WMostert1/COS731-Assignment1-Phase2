@@ -33,10 +33,13 @@ public class CarController {
     @PutMapping
     @ResponseBody
     public ResponseEntity updateCars(String email, String [] carRegistration){
+        if(carRegistration == null)
+            carRegistration = new String[]{};
         List<String> carRegistrations = Arrays.asList(carRegistration);
         List<Car> cars = new ArrayList<>();
         carRepository.findAll().forEach((car)->{
-            if(car.getUser().getEmail().equals(email))
+
+            if(car.getUser() != null && car.getUser().getEmail().equals(email))
                 cars.add(car);
         });
         List<String> deletedCars = new ArrayList<>();

@@ -6,7 +6,8 @@ import { ThreadComponent } from './threads/thread.component';
 import { PostComponent } from './threads/posts/post.component';
 import { ThreadListComponent } from './threads/thread.list.component';
 import { HomeComponent } from './home/home.component';
-
+import { TransactionComponent } from './transactions/transaction.component';
+import {TransactionService } from './transactions/transaction.service';
 import { ThreadService } from './threads/thread.service';
 
 import { RouterModule, Routes } from '@angular/router';
@@ -49,6 +50,7 @@ import {ToastModule} from 'ng2-toastr/ng2-toastr';
     NewPasswordComponent,
     LoginComponent,
     LogoutComponent,
+    TransactionComponent,
     RegistrationConfirmationComponent,
     ResendCodeComponent,
     ForgotPasswordStep1Component,
@@ -73,6 +75,7 @@ import {ToastModule} from 'ng2-toastr/ng2-toastr';
   providers: [ThreadService,
     CognitoUtil,
     AwsUtil,
+    TransactionService,
     UserRegistrationService,
     UserLoginService,
     UserParametersService],

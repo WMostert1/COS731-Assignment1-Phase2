@@ -3,6 +3,7 @@ import {ModuleWithProviders} from "@angular/core";
 import {HomeComponent} from "./home/home.component";
 import { ThreadListComponent } from './threads/thread.list.component';
 import { ThreadComponent } from './threads/thread.component';
+import { TransactionComponent } from './transactions/transaction.component';
 import {LoginComponent} from "./auth/login/login.component";
 import {RegisterComponent} from "./auth/register/registration.component";
 import {ForgotPassword2Component, ForgotPasswordStep1Component} from "./auth/forgot/forgotPassword.component";
@@ -13,6 +14,7 @@ import {NewPasswordComponent} from "./auth/newpassword/newpassword.component";
 const appRoutes: Routes = [
   { path: 'thread/:id', component: ThreadComponent },
   { path: 'threads',      component: ThreadListComponent },
+  { path: 'transactions',      component: TransactionComponent },
     {path: 'logout', component: LogoutComponent},
     {path: 'login', component: LoginComponent},
     {path: 'register', component: RegisterComponent},

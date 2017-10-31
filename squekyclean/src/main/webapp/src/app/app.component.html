@@ -16,6 +16,7 @@
         <li *ngIf="!getEmail()"><a routerLink="/login">Login</a></li>
         <li *ngIf="!getEmail()"><a routerLink="/register">Register</a></li>
         <li *ngIf="getEmail()"><a routerLink="/logout">Logout - {{getEmail()}}</a></li>
+        <li *ngIf="getEmail()"><a routerLink="/transactions">My Cars</a></li>
       </ul>
 
     </div>

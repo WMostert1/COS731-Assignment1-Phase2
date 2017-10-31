@@ -20,8 +20,6 @@ export class ThreadListComponent {
     }
 
 
- 
-
     createNewThread(): void {
         this.dialogRef = this.dialog.open(ConfirmationDialog, {
             disableClose: false

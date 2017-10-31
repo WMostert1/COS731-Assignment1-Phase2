@@ -1,0 +1,52 @@
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Cars <span (click)="addCar()" class="glyphicon glyphicon-plus pull-right"></span></h3>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-sm-12">
+
+                            <div *ngIf="!hasCars()" class="alert alert-info" role="alert">
+                                You don't have any cars registered.
+                            </div>
+
+                        <ul *ngIf="userTrans" class="list-group">
+                            <li (click)="setCurrentTransactions(car.registrationNumber)" *ngFor="let car of userTrans.cars" class="list-group-item">
+                                {{car.registrationNumber}} <span (click)="removeCar(car.registrationNumber)" class="glyphicon glyphicon-remove pull-right"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+         
+        </div>
+   
+
+        <div *ngIf="currentTransactions" class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Transactions</h3>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-sm-12">
+
+                            <div *ngIf="!hasTransactions()" class="alert alert-info" role="alert">
+                                You don't have any transactions registered for this car.
+                            </div>
+
+
+                        <ul *ngIf="hasTransactions()" class="list-group">
+                            <li *ngFor="let transaction of currentTransactions" class="list-group-item">
+                                 <strong>{{transaction.transactionType}}</strong> - {{transaction.description}}
+                                    <small class="pull-right">{{transaction.date | date:'medium'}}</small>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+         
+        </div>
+   
+

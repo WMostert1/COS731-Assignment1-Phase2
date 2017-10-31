@@ -12,11 +12,3 @@ ALTER TABLE Transactions
   ( id
   )
 ;
-
-
-ALTER TABLE Transactions
- ADD CONSTRAINT CAR_FK FOREIGN KEY
-  (
-  carId
-  ) REFERENCES Cars MATCH FULL
-;
